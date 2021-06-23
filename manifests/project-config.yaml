@@ -1,0 +1,16 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: projects
+  namespace: tooling
+spec:
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  description: Tooling projects
+  destinations:
+  - namespace: tooling
+    server: https://kubernetes.default.svc
+  sourceRepos:
+  - https://github.com/corest/argodemo-projects.git
