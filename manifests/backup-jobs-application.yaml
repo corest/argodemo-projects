@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: tooling
     server: https://kubernetes.default.svc
-  project: tooling
+  project: workloads
   source:
     path: manifests
     repoURL: https://github.com/corest/argodemo-project-backup-jobs.git
