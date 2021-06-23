@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: projects
+  name: backup-jobs
   namespace: argocd
 spec:
   destination:
     namespace: tooling
     server: https://kubernetes.default.svc
-  project: tooling
+  project: workloads
   source:
     path: manifests
-    repoURL: https://github.com/corest/argodemo-projects.git
-    targetRevision: demo
+    repoURL: https://github.com/corest/argodemo-project-backup-jobs.git
+    targetRevision: main
   syncPolicy:
     automated:
       allowEmpty: true
