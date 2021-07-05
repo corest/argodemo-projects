@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: workloads
   source:
-    path: manifests
+    path: manifests/jobs
     repoURL: https://github.com/corest/argodemo-project-backup-jobs.git
     targetRevision: main
   syncPolicy:
