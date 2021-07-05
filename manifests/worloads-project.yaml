@@ -12,5 +12,7 @@ spec:
   destinations:
   - namespace: tooling
     server: https://kubernetes.default.svc
+  - namespace: argo
+    server: https://kubernetes.default.svc
   sourceRepos:
   - https://github.com/corest/argodemo-project-backup-jobs.git
