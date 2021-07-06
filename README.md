@@ -18,6 +18,7 @@ kubectl apply -n argo -f https://raw.githubusercontent.com/argoproj/argo-workflo
 
 ```
 kubectl create rolebinding default-admin --clusterrole=admin --serviceaccount=argo:default --namespace=argo
+kubectl create clusterrolebinding argo-server-clusterworkflows --clusterrole=admin --serviceaccount=argo:argo-server -n argo
 ```
 
 4. Patch config
